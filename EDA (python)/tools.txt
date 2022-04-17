@@ -1,0 +1,11 @@
+Data Profile Report:
+
+import sys
+!{sys.executable} -m pip install pandas-profiling
+from pandas_profiling import ProfileReport
+
+
+ProfileReport(df)
+
+------------
+
