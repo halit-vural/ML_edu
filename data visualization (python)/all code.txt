@@ -69,3 +69,22 @@ plt.ylabel("residuals")
 plt.show()
 
 -----------------------------
+
+from mpl_toolkits.mplot3d import Axes3D 
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+ax.scatter(df['Gene One'], df['Gene Two'], df['Cancer Present'],c=df['Cancer Present']);
+
+------------------------------
+
+correlation:
+----------
+df.corr()[TARGET].drop([TARGET, 'Time']).sort_values().plot.bar();
+
+---------------------------------
+
+sns.countplot(x="species", data = df, hue = "sex");
+
+-------------------------------
+
+
