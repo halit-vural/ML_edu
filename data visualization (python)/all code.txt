@@ -87,4 +87,8 @@ sns.countplot(x="species", data = df, hue = "sex");
 
 -------------------------------
 
+sns.catplot(x='species', data=df, kind='count',col='sex')
+
+---------------------------
+
 
